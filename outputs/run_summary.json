@@ -1,0 +1,301 @@
+{
+  "objectives": {
+    "lag_features": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      14,
+      21,
+      30
+    ],
+    "rolling_windows": [
+      3,
+      7,
+      14
+    ],
+    "horizons_days": [
+      1,
+      7
+    ],
+    "models": [
+      "Persistence",
+      "RandomForest",
+      "XGBoost",
+      "SVR"
+    ],
+    "test_start": "2024-01-01",
+    "regions_in_file": [
+      "Brajrajnagar"
+    ]
+  },
+  "note": "cleaned_data.xlsx currently contains a single OSPCB station (GM Office, Brajrajnagar). Additional mining-region folders under data/ can be merged into the same schema for multi-region comparison.",
+  "best_models": [
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 1,
+      "model": "XGBoost",
+      "n": 706,
+      "rmse": 21.5768,
+      "mae": 16.3211,
+      "r2": 0.722,
+      "nrmse": 0.2884,
+      "nmae": 0.2181,
+      "mean_obs": 74.828
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 7,
+      "model": "RandomForest",
+      "n": 698,
+      "rmse": 28.3093,
+      "mae": 21.7022,
+      "r2": 0.5239,
+      "nrmse": 0.3789,
+      "nmae": 0.2905,
+      "mean_obs": 74.7183
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 1,
+      "model": "RandomForest",
+      "n": 706,
+      "rmse": 9.4913,
+      "mae": 7.0936,
+      "r2": 0.7108,
+      "nrmse": 0.2944,
+      "nmae": 0.22,
+      "mean_obs": 32.2432
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 7,
+      "model": "RandomForest",
+      "n": 698,
+      "rmse": 12.7483,
+      "mae": 9.7707,
+      "r2": 0.481,
+      "nrmse": 0.3959,
+      "nmae": 0.3035,
+      "mean_obs": 32.1968
+    }
+  ],
+  "metrics": [
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 1,
+      "model": "Persistence",
+      "n": 706,
+      "rmse": 9.6277,
+      "mae": 7.0326,
+      "r2": 0.7024,
+      "nrmse": 0.2986,
+      "nmae": 0.2181,
+      "mean_obs": 32.2432
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 1,
+      "model": "RandomForest",
+      "n": 706,
+      "rmse": 9.4913,
+      "mae": 7.0936,
+      "r2": 0.7108,
+      "nrmse": 0.2944,
+      "nmae": 0.22,
+      "mean_obs": 32.2432
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 1,
+      "model": "XGBoost",
+      "n": 706,
+      "rmse": 9.8154,
+      "mae": 7.4553,
+      "r2": 0.6907,
+      "nrmse": 0.3044,
+      "nmae": 0.2312,
+      "mean_obs": 32.2432
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 1,
+      "model": "SVR",
+      "n": 706,
+      "rmse": 11.0209,
+      "mae": 8.3448,
+      "r2": 0.6101,
+      "nrmse": 0.3418,
+      "nmae": 0.2588,
+      "mean_obs": 32.2432
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 7,
+      "model": "Persistence",
+      "n": 698,
+      "rmse": 16.2887,
+      "mae": 12.2011,
+      "r2": 0.1526,
+      "nrmse": 0.5059,
+      "nmae": 0.379,
+      "mean_obs": 32.1968
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 7,
+      "model": "RandomForest",
+      "n": 698,
+      "rmse": 12.7483,
+      "mae": 9.7707,
+      "r2": 0.481,
+      "nrmse": 0.3959,
+      "nmae": 0.3035,
+      "mean_obs": 32.1968
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 7,
+      "model": "XGBoost",
+      "n": 698,
+      "rmse": 14.5561,
+      "mae": 11.5686,
+      "r2": 0.3233,
+      "nrmse": 0.4521,
+      "nmae": 0.3593,
+      "mean_obs": 32.1968
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm25",
+      "horizon": 7,
+      "model": "SVR",
+      "n": 698,
+      "rmse": 14.1281,
+      "mae": 11.0798,
+      "r2": 0.3625,
+      "nrmse": 0.4388,
+      "nmae": 0.3441,
+      "mean_obs": 32.1968
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 1,
+      "model": "Persistence",
+      "n": 706,
+      "rmse": 22.1535,
+      "mae": 16.2048,
+      "r2": 0.707,
+      "nrmse": 0.2961,
+      "nmae": 0.2166,
+      "mean_obs": 74.828
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 1,
+      "model": "RandomForest",
+      "n": 706,
+      "rmse": 21.596,
+      "mae": 16.1185,
+      "r2": 0.7215,
+      "nrmse": 0.2886,
+      "nmae": 0.2154,
+      "mean_obs": 74.828
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 1,
+      "model": "XGBoost",
+      "n": 706,
+      "rmse": 21.5768,
+      "mae": 16.3211,
+      "r2": 0.722,
+      "nrmse": 0.2884,
+      "nmae": 0.2181,
+      "mean_obs": 74.828
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 1,
+      "model": "SVR",
+      "n": 706,
+      "rmse": 24.2598,
+      "mae": 18.1017,
+      "r2": 0.6486,
+      "nrmse": 0.3242,
+      "nmae": 0.2419,
+      "mean_obs": 74.828
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 7,
+      "model": "Persistence",
+      "n": 698,
+      "rmse": 37.5853,
+      "mae": 28.2151,
+      "r2": 0.1609,
+      "nrmse": 0.503,
+      "nmae": 0.3776,
+      "mean_obs": 74.7183
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 7,
+      "model": "RandomForest",
+      "n": 698,
+      "rmse": 28.3093,
+      "mae": 21.7022,
+      "r2": 0.5239,
+      "nrmse": 0.3789,
+      "nmae": 0.2905,
+      "mean_obs": 74.7183
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 7,
+      "model": "XGBoost",
+      "n": 698,
+      "rmse": 30.1955,
+      "mae": 23.4395,
+      "r2": 0.4584,
+      "nrmse": 0.4041,
+      "nmae": 0.3137,
+      "mean_obs": 74.7183
+    },
+    {
+      "region": "Brajrajnagar",
+      "pollutant": "pm10",
+      "horizon": 7,
+      "model": "SVR",
+      "n": 698,
+      "rmse": 31.3132,
+      "mae": 24.1515,
+      "r2": 0.4176,
+      "nrmse": 0.4191,
+      "nmae": 0.3232,
+      "mean_obs": 74.7183
+    }
+  ]
+}

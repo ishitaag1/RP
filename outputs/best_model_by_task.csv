@@ -1,0 +1,5 @@
+region,pollutant,horizon,model,n,rmse,mae,r2,nrmse,nmae,mean_obs
+Brajrajnagar,pm10,1,XGBoost,706,21.5768,16.3211,0.722,0.2884,0.2181,74.828
+Brajrajnagar,pm10,7,RandomForest,698,28.3093,21.7022,0.5239,0.3789,0.2905,74.7183
+Brajrajnagar,pm25,1,RandomForest,706,9.4913,7.0936,0.7108,0.2944,0.22,32.2432
+Brajrajnagar,pm25,7,RandomForest,698,12.7483,9.7707,0.481,0.3959,0.3035,32.1968
